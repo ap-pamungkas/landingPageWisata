@@ -1,0 +1,403 @@
+:root {
+  --font: #393e46;
+}
+
+* {
+  margin: 0;
+  font-family: "Times New Roman", Times, serif;
+  list-style: none;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #222831;
+  box-sizing: border-box;
+
+  overflow-x: hidden;
+}
+.header {
+  background-color: #eeeeee;
+  max-width: 100%;
+  position: sticky;
+}
+.fixed {
+  /* Gaya header tetap saat digulir */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #eeeeee;
+  z-index: 999;
+  box-sizing: border-box;
+}
+.brand {
+  font-family: "Times New Roman", Times, serif;
+  color: var(--font);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 35px;
+}
+.nav {
+  max-width: 100%;
+}
+
+.nav,
+ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  float: right;
+}
+
+.nav,
+a {
+  text-decoration: none;
+  color: var(--font);
+
+  font-size: 20px;
+  font-weight: 400;
+  margin-top: 0.8rem;
+}
+
+.link {
+  margin-top: 0.8rem;
+  margin: 1.5rem;
+}
+
+.link:hover {
+  border-bottom: 0.1rem solid;
+  color: #00adb5;
+}
+
+#menu {
+  align-self: center;
+  cursor: pointer;
+  display: none;
+  margin-left: 90%;
+  z-index: 3;
+  color: #eeeeee;
+}
+
+.hero {
+ 
+  background-image: url(src/content/heroimg.jpg) !important;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  display: flex;
+  background-size: cover;
+  background-position: center;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+}
+.background{
+  background-color: red;
+  position: absolute;
+  width: 100%;
+  height: 90%;
+  z-index: 0;
+}
+
+.background img{
+  height: 1%;
+  
+}
+
+
+
+.title1 {
+  display: flex;
+  justify-content: center;
+  
+}
+.title {
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid #eeeeee !important;
+  margin-top: 2rem;
+}
+.title1 h1 {
+  font-size: 8rem;
+  color: rgb(255, 255, 255);
+}
+
+.about {
+  display: flex;
+  justify-content: center;
+
+  color: rgb(255, 255, 255);
+}
+
+.about p {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+/* section berita */
+
+.berita {
+  display: flex;
+  justify-content: center;
+}
+
+.berita .title h2 {
+  margin-top: 3rem;
+
+  font-size: 5rem;
+
+  color: #00adb5;
+}
+
+.content {
+  margin: 4rem;
+  height: 19rem;
+}
+
+
+.wisata-ketapang .card-body {
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.wisata-ketapang h5 {
+  color: #00adb5;
+  cursor: pointer;
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  margin-top: -0.5rem;
+}
+
+.wisata-ketapang h5:hover {
+  background-color: #eeeeee;
+  border: 2px solid #eeeeee;
+  color: #00adb5;
+  border-radius: 1.6rem;
+}
+
+.content {
+  height: 70%;
+}
+
+.item{
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  margin: 0;
+}
+
+.item img{
+  margin: 0.8rem;
+}
+
+
+
+.item:hover {
+  transform: scale(102%);
+}
+
+
+
+
+footer {
+  background-color: #eeeeee;
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+footer .socials {
+  padding: 1rem 0;
+}
+
+footer .socials a {
+  color: #00adb5;
+  margin: 1rem;
+}
+footer .socials a:hover,
+footer .links a:hover {
+  color: var(--font);
+}
+
+footer .links {
+  margin-bottom: 1.4rem;
+}
+footer .links a {
+  color: #00adb5;
+  padding: 0.7rem 1rem;
+}
+
+footer .credit {
+  font-size: 0.8rem;
+}
+footer .credit a {
+  color: var(--font);
+  font-weight: 700;
+}
+
+/* media Queris */
+
+/* laptop */
+@media (max-width: 1366px) {
+  html {
+    font-size: 75%;
+  }
+  .content {
+    margin: 3rem;
+    height: 19rem;
+  }
+
+ 
+}
+
+/* tablet*/
+@media (max-width: 820px) {
+  html {
+    font-size: 70.5%;
+  }
+  body {
+    background-color: #eeeeee;
+  }
+
+
+
+  .nav,
+  ul,
+  li a {
+    font-size: 120%;
+    margin-top: 3%;
+  }
+  .header {
+    background-color: #222831;
+    padding: 1rem;
+  }
+
+  #menu {
+    display: inline-block;
+    position: absolute;
+    align-self: center;
+    margin-top: 1.7%;
+  }
+
+  .brand {
+    color: #eeeeee;
+  }
+  .nav {
+    position: absolute;
+
+    background-color: #222831;
+
+    top: -100%;
+
+    margin-left: 1%;
+    height: 6vh;
+    width: 100%;
+    margin-top: -0.9rem;
+   
+  }
+  .about p{
+    color: #222831;
+  }
+
+  .nav ul,
+  li,
+  a {
+    color: #eeeeee;
+  }
+  .nav.active {
+  
+   top:1%;
+
+    
+  }
+
+  .title1 h1 {
+    color: #222831;
+    font-size: 5rem;
+  }
+ 
+  .wisata-ketapang h5:hover {
+    background-color: #222831;
+    border: 2px solid;
+  }
+  .about p {
+    font-size: 2rem;
+  }
+  .berita .title h2 {
+    margin-top: 2rem;
+    text-align: center;
+  }
+  .content {
+    
+   padding-bottom: 7rem;
+    height: 40rem;
+  }
+
+  .items-content{
+    margin-top: 2rem;
+ 
+    padding-bottom: 1rem;
+
+
+  }
+
+  .items-content .card-body{
+    
+ 
+    margin-bottom: 2rem;
+  }
+
+
+
+
+
+ 
+  .item img{
+    width: 100%;
+   height: 70% !important;
+   
+    
+  }
+ 
+
+  footer {
+    background-color: #222831;
+  }
+  footer .credit {
+    color: #eeeeee;
+  }
+  footer .credit a {
+    color: #00adb5;
+  }
+}
+
+/* moblie phone*/
+@media (max-width: 450px) {
+  html {
+    font-size: 55%;
+  }
+  .nav {
+    margin-left: 1.6%;
+ 
+     height: 5.6rem;
+     margin-left: -0.3rem;
+  }
+
+  #menu {
+    margin-top: 1.4%;
+  }
+  .nav ul,
+  li,
+  a {
+    font-size: 100%;
+  }
+
+}
